@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bites2B wordmark collision prototype</title>
+<style>
+:root{color-scheme:dark;--navy:#0b1f52;--orange:#fc6156;--blue:#1448c8}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;font:600 16px/1.4 system-ui,sans-serif;background:#09143e;color:#fff}
+body{display:grid;place-items:center;background:radial-gradient(ellipse at 50% 48%,#12306f 0,#0b1f52 54%,#081a3f 100%)}
+.frame{width:min(100vw,160vh);height:min(100dvh,62.5vw);min-height:320px;display:grid;grid-template-rows:auto 1fr auto;gap:12px;padding:clamp(14px,3vw,36px)}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px}.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.7}.stage{font-size:clamp(16px,2.2vw,24px);font-weight:750}
+.stage-window{position:relative;display:grid;place-items:center;min-height:0;overflow:hidden;border:1px solid #ffffff20;border-radius:20px;background:linear-gradient(180deg,#ffffff03 0 68%,#050b25 68% 100%)}
+svg{display:block;width:min(96%,1150px);max-height:88%;overflow:visible;isolation:isolate}.floor{stroke:#8191cf42;stroke-width:2;stroke-dasharray:5 8}.letter path,.blue path{stroke:none;stroke-width:0;vector-effect:non-scaling-stroke}.letter path{fill:var(--orange)}.blue path{fill:var(--blue)}
+.letter,.blue{transform-box:view-box;transform-origin:0 0;will-change:transform}.blue{opacity:0}.letter{opacity:0}
+.controls{display:flex;align-items:center;justify-content:space-between;gap:12px}.buttons{display:flex;gap:8px;flex-wrap:wrap}button{font:inherit;color:#fff;background:#ffffff10;border:1px solid #ffffff30;border-radius:999px;padding:9px 15px;cursor:pointer}button:hover,button[aria-pressed=true]{background:#ffffff27}button:focus-visible{outline:3px solid white;outline-offset:2px}.legend{font-size:12px;opacity:.65}
+@media(max-width:560px){.frame{width:100vw;height:100dvh;min-height:0;padding:16px;gap:8px}.stage-window{border-radius:14px}svg{width:114%;max-width:none;transform:translateX(-6%)}.controls{align-items:flex-start;flex-direction:column}.legend{font-size:11px}}
+</style>
+</head>
+<body>
+<main class="frame">
+<header><div><div class="eyebrow">Isolated SVG physics prototype</div><div class="stage" id="stage">1 · Scattered letters</div></div><div class="eyebrow">Official 1201 × 366 viewBox</div></header>
+<section class="stage-window" aria-label="Wordmark collision preview">
+<svg id="mark" viewBox="0 0 1201 366" role="img" aria-label="Bites2B wordmark">
+<line class="floor" x1="0" y1="345" x2="1201" y2="345"/>
+<g class="letter" data-i="0"><path d="M180 236 L187 227 L188 215 L182 203 L172 198 L157 198 L103 211 L112 257 L161 246 L178 239Z M169 58 L169 65 L175 70 L176 81 L182 86 L188 86 L192 95 L196 97 L207 96 L212 100 L220 100 L222 97 L225 98 L227 106 L227 120 L223 136 L215 149 L204 159 L215 160 L223 163 L240 176 L240 256 L226 271 L199 286 L161 297 L61 320 L12 86 L145 54 L170 53 L171 56Z M155 112 L145 107 L132 107 L86 118 L85 123 L94 165 L141 154 L152 148 L158 142 L161 135 L161 122Z"/></g>
+<g class="letter" data-i="1"><path d="M313 162 L313 163 L313 164 L312 164 L309 153 L309 290 L249 290 L249 240 L244 251 L240 255 L240 177 L244 181 L249 192 L249 107 L309 106 L309 140 L313 139Z M244 63 L246 49 L252 39 L259 33 L272 28 L285 28 L299 34 L307 42 L312 54 L312 68 L307 80 L295 91 L284 95 L272 95 L257 88 L249 79Z"/></g>
+<g class="letter" data-i="2"><path d="M381 107 L384 114 L417 102 L421 99 L422 99 L422 100 L423 100 L437 148 L402 160 L398 162 L398 166 L418 231 L424 235 L435 235 L449 223 L450 223 L451 223 L452 223 L461 237 L461 273 L450 282 L425 292 L397 292 L383 286 L371 275 L360 255 L339 182 L319 189 L313 168 L313 139 L326 134 L314 91 L371 70Z"/></g>
+<g class="letter" data-i="3"><path d="M565 186 L595 195 L596 195 L596 194 L597 194 L597 182 L593 171 L587 164 L576 158 L569 156 L550 157 L538 163 L530 173 L530 174 L530 175Z M587 235 L520 214 L519 222 L524 235 L532 243 L549 251 L575 251 L587 246 L593 241 L594 245 L618 281 L601 293 L589 298 L577 301 L555 302 L523 295 L495 280 L481 267 L475 257 L461 272 L461 239 L468 247 L461 222 L463 186 L471 163 L477 152 L498 128 L509 120 L535 109 L553 106 L572 106 L601 113 L615 120 L634 135 L636 138 L636 250Z M633 258 L636 256 L636 267 L632 263Z"/></g>
+<g class="letter" data-i="4"><path d="M725 256 L728 251 L728 247 L724 241 L680 217 L668 205 L664 198 L660 184 L660 174 L663 160 L671 145 L684 132 L698 124 L717 119 L741 119 L763 126 L768 126 L784 134 L798 145 L806 154 L808 159 L774 191 L773 191 L772 191 L757 175 L746 169 L736 166 L726 166 L719 171 L719 179 L724 184 L755 199 L774 213 L783 228 L786 240 L786 249 L784 259 L778 273 L763 290 L748 299 L731 303 L731 304 L730 304 L730 305 L704 305 L683 300 L661 290 L648 281 L636 268 L636 255 L639 253 L639 252 L639 251 L636 250 L636 139 L642 145 L649 158 L656 186 L654 216 L642 249 L665 227 L681 244 L700 255 L711 258 L720 258Z"/></g>
+<g class="blue"><path d="M890 255 L853 288 L963 288 L962 178 L946 201Z M763 64 L780 44 L781 44 L782 44 L791 35 L810 24 L828 17 L842 14 L877 12 L903 16 L918 21 L935 30 L945 37 L960 52 L967 62 L971 72 L1105 71 L1119 73 L1139 79 L1154 87 L1167 99 L1174 111 L1177 121 L1178 143 L1174 158 L1167 170 L1147 187 L1161 193 L1172 201 L1179 209 L1186 222 L1189 234 L1189 252 L1184 270 L1175 284 L1161 296 L1138 307 L1119 312 L1095 315 L980 315 L980 353 L730 353 L730 304 L749 299 L761 292 L770 284 L781 268 L786 248 L821 217 L822 217 L823 217 L830 209 L838 204 L876 168 L889 151 L894 141 L898 125 L896 105 L890 94 L881 86 L868 81 L853 81 L845 83 L834 90 L823 106 L819 126 L764 126 L747 121 L747 107 L750 93 L754 81Z M1029 235 L1029 263 L1093 262 L1110 255 L1116 244 L1116 234 L1113 227 L1108 222 L1091 216 L1029 216Z M1029 147 L1029 165 L1032 167 L1077 167 L1088 165 L1098 160 L1104 151 L1105 139 L1099 128 L1086 122 L1029 121Z"/></g>
+</svg>
+</section>
+<nav class="controls" aria-label="Prototype controls"><div class="buttons"><button id="replay">Replay normal speed</button><button id="slow">Replay slow collision</button><button id="scatter">Scattered</button><button id="airborne">Airborne reaction</button><button id="final">Final aligned</button></div><div class="legend">Orange glyph paths remain separate. Blue enters from the right.</div></nav>
+</main>
+<script>
+(() => {
+ const svg=document.querySelector('#mark'),letters=[...svg.querySelectorAll('.letter')],blue=svg.querySelector('.blue'),label=document.querySelector('#stage');
+ // Fixed path bounds are measured once from each official source glyph. The offsets are SVG user units.
+ const bounds=[{x:12,y:28,w:228,h:292},{x:240,y:28,w:73,h:262},{x:313,y:70,w:148,h:222},{x:461,y:106,w:175,h:196},{x:636,y:119,w:172,h:186}];
+ const angle=[-8,6,-5,8,-7],gap=32,ground=345;
+ const rotated=(b,a)=>{const r=Math.abs(a*Math.PI/180);return{w:b.w*Math.cos(r)+b.h*Math.sin(r),h:b.h*Math.cos(r)+b.w*Math.sin(r)}};
+ const extent=(b,x,a)=>{const r=rotated(b,a),extra=(r.w-b.w)/2;return{left:b.x+x-extra,right:b.x+x+b.w+extra}};
+ let cursor=12;
+ const scatter=bounds.map((b,i)=>{const r=rotated(b,angle[i]),left=cursor,dx=left+r.w/2-(b.x+b.w/2),dy=ground-(b.y+b.h/2+r.h/2);cursor+=r.w+gap;return{dx,dy,a:angle[i],w:r.w,h:r.h,b};});
+ const state=bounds.map(()=>({x:0,y:0,a:0,vx:0,vy:0,va:0,active:false,done:false}));
+ let raf=0,mode='';
+ const paint=(i)=>letters[i].setAttribute('transform',`translate(${state[i].x.toFixed(2)} ${state[i].y.toFixed(2)}) rotate(${state[i].a.toFixed(2)} ${bounds[i].x+bounds[i].w/2} ${bounds[i].y+bounds[i].h/2})`);
+ const reset=()=>{cancelAnimationFrame(raf);state.forEach((s,i)=>{Object.assign(s,{x:0,y:-540,a:0,vx:0,vy:0,va:0,active:false,done:false});letters[i].style.opacity='0';paint(i)});blue.style.opacity='0';blue.setAttribute('transform','translate(0 0)');};
+ function pose(which){reset();if(which==='scatter'||which==='airborne'){state.forEach((s,i)=>{s.x=scatter[i].dx-(which==='airborne'&&i===4?10:0);s.y=scatter[i].dy-(which==='airborne'?[58,72,83,100,126][i]:0);s.a=scatter[i].a+(which==='airborne'?(i%2?8:-11):0);s.vy=which==='airborne'?-180-i*14:0;s.vx=which==='airborne'?-100-i*15:0;s.va=which==='airborne'?angle[i]*2:0;letters[i].style.opacity='1';paint(i)});if(which==='airborne'){blue.style.opacity='1';const contactX=extent(bounds[4],state[4].x,state[4].a).right-730;blue.setAttribute('transform',`translate(${contactX.toFixed(2)} 0)`)}label.textContent=which==='scatter'?'1 · Scattered orange letters':'2 · Collision · airborne reaction'}else{state.forEach((s,i)=>{Object.assign(s,{x:0,y:0,a:0,vx:0,vy:0,va:0});letters[i].style.opacity='1';paint(i)});blue.style.opacity='1';blue.setAttribute('transform','translate(0 0)');label.textContent='3 · Final aligned logo'}}
+ function run(slow=false){reset();mode='run';const rate=slow ? .42 : 1;label.textContent='1 · Scattered orange letters';const begin=performance.now();let last=begin,fallNext=0,blueX=1201,contact=false,chain=[false,false,false,false,false],aligned=false;
+  function frame(now){const realDt=Math.min((now-last)/1000,.03);last=now;const dt=realDt*rate,t=(now-begin)*rate;
+   for(let i=0;i<5;i++){const s=state[i];if(!s.active&&t>=fallNext){s.active=true;s.vx=0;s.vy=0;s.va=(i%2?1:-1)*(1.2+i*.16);s.x=scatter[i].dx;s.y=scatter[i].dy-500;s.a=scatter[i].a*.28;letters[i].style.opacity='1';fallNext+=900;}
+    if(!s.active)continue;
+    const target=scatter[i];
+    if(t<5*900+850){if(s.done){paint(i);continue} s.vy+=2300*dt;s.y+=s.vy*dt;s.a+=s.va*dt;if(s.y>=target.dy){s.y=target.dy;s.vy=-Math.abs(s.vy)*.24;s.va=(i%2?1:-1)*(5+i*1.8);if(Math.abs(s.vy)<125){s.vy=0;s.va=0;s.y=target.dy;s.a=target.a;s.done=true}}paint(i);continue}
+   }
+   if(t>5*900+1050){label.textContent=contact?'2 · Collision · airborne reaction':'1 · Scattered orange letters';blue.style.opacity='1';blueX-=760*dt;blue.setAttribute('transform',`translate(${blueX.toFixed(2)} 0)`);const blueLeft=730+blueX;
+    const si=state[4],sbox=bounds[4],right=extent(sbox,si.x,si.a).right;
+    if(!contact&&blueLeft<=right){contact=true;si.vx=-410;si.vy=-560;si.va=-si.a*3.5;si.done=false;chain[4]=true;label.textContent='2 · Collision · airborne reaction';}
+    if(contact){const projectedRight=extent(bounds[4],state[4].x,state[4].a).right;blueX=Math.max(0,projectedRight-730);blue.setAttribute('transform',`translate(${blueX.toFixed(2)} 0)`);
+      const activeAtFrame=chain.slice();
+      for(let i=4;i>=0;i--){const s=state[i];if(!activeAtFrame[i])continue;s.vy+=1100*dt;s.x+=s.vx*dt;s.y+=s.vy*dt;s.va+=-s.a*8*dt;s.a=Math.max(-18,Math.min(18,s.a+s.va*dt));s.vx*=Math.exp(-1.8*dt);s.va*=Math.exp(-4*dt);
+       if(i>0&&!chain[i-1]){const prev=state[i-1],leftEdge=extent(bounds[i],s.x,s.a).left,prevRight=extent(bounds[i-1],prev.x,prev.a).right;if(leftEdge<=prevRight+4){s.x+=prevRight+4-leftEdge;chain[i-1]=true;prev.done=false;prev.vx=s.vx*.92;prev.vy=-500-i*18;prev.va=-prev.a*3.5+(i%2?8:-8);s.vx=prev.vx;collisions++;}}
+       const floorY=scatter[i].dy;if(s.y>=floorY&&s.vy>0){s.y=floorY;s.vy=-Math.abs(s.vy)*.31;if(Math.abs(s.vy)<55){s.vy=0;s.vx*=.62;s.va*=.5}}
+       paint(i);
+      }
+      for(let i=4;i>0;i--){if(!chain[i]||!chain[i-1])continue;const s=state[i],prev=state[i-1],leftEdge=extent(bounds[i],s.x,s.a).left,prevRight=extent(bounds[i-1],prev.x,prev.a).right;if(leftEdge<prevRight+4){s.x+=prevRight+4-leftEdge;s.vx=prev.vx}}
+      if(!aligned&&chain.every(Boolean)&&state.every(s=>Math.abs(s.vy)<2&&Math.abs(s.va)<2)){aligned=true;mode='settling';label.textContent='3 · Final aligned logo';const start=performance.now(),from=state.map(s=>({...s})),blueFrom=blueX;function settle(ts){const p=Math.min(1,(ts-start)/650),e=1-Math.pow(1-p,3);state.forEach((s,i)=>{s.x=from[i].x*(1-e);s.y=from[i].y*(1-e);s.a=from[i].a*(1-e);s.vx=s.vy=s.va=0;paint(i)});blueX=blueFrom*(1-e);blue.setAttribute('transform',`translate(${blueX} 0)`);if(p<1)requestAnimationFrame(settle);else{pose('final');mode='done'}}requestAnimationFrame(settle)}
+    }
+   }
+   if(mode==='run')raf=requestAnimationFrame(frame);
+  }raf=requestAnimationFrame(frame);
+ }
+ document.querySelector('#replay').onclick=()=>run(false);document.querySelector('#slow').onclick=()=>run(true);document.querySelector('#scatter').onclick=()=>pose('scatter');document.querySelector('#airborne').onclick=()=>pose('airborne');document.querySelector('#final').onclick=()=>pose('final');run(false);
+})();
+</script>
+</body>
+</html>
