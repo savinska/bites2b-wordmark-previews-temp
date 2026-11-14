@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="bg" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bites2B wordmark intro, variant D2 corrected</title>
+<style>
+:root {
+    --stage: #ffffff;
+    --ink: #0b1f52;
+    --orange: #fc6155;
+    --blue: #1742c8;
+    --font-sans: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+:root[data-theme="dark"] { --stage: #0b1f52; --ink: #f8faff; --blue: #ffffff; }
+html, body { height: 100%; margin: 0; background: var(--stage); }
+body { overflow: hidden; -webkit-font-smoothing: antialiased; }
+.stage { position: fixed; inset: 0; display: grid; grid-template-rows: auto 1fr auto; align-items: center; padding: max(20px, env(safe-area-inset-top)) 20px max(24px, env(safe-area-inset-bottom)); box-sizing: border-box; }
+.stage-tools, .stage-actions { display: flex; align-items: center; justify-content: center; gap: 12px; z-index: 1; }
+.stage-tools { justify-content: space-between; }
+.stage-actions { min-height: 60px; }
+.stage-button { min-height: 48px; padding: 12px 20px; border: 1px solid rgba(11,31,82,.22); border-radius: 999px; background: #fff; color: var(--ink); font: 650 1rem var(--font-sans); cursor: pointer; }
+.stage-button:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+.stage-button-primary { min-width: min(280px, 80vw); border-color: var(--orange); background: var(--orange); color: #fff; box-shadow: 0 10px 24px rgba(11,31,82,.12); }
+.stage-button[hidden] { display: none; }
+.stage-tools .stage-button { min-height: 42px; padding: 9px 14px; font-size: .9rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.lockup { justify-self: center; align-self: center; }
+.lockup { display: flex; flex-direction: column; align-items: center; width: min(88vw, 880px); }
+@media (max-width: 899px) { .lockup { width: 84vw; } }
+.mark { display: block; width: 100%; height: auto; aspect-ratio: 1194 / 326; overflow: visible; }
+.mark .o { fill: var(--orange); }
+.mark .b { fill: var(--blue); }
+.slogan { width: max-content; max-width: calc(100vw - 32px); margin: clamp(20px, 3.8vw, 42px) 0 0; color: var(--ink); font: 700 clamp(1.5rem, 3.9vw, 2.85rem) / 1.2 var(--font-sans); letter-spacing: -.02em; text-align: center; text-wrap: balance; opacity: 0; transform: translateY(10px); }
+@media (max-width: 359px) { .slogan { font-size: 1.375rem; } }
+[data-capture] .stage-tools, [data-capture] .stage-actions { display: none; }
+[data-reduced-motion="true"] .stage-tools, [data-reduced-motion="true"] #play-intro { display: none; }
+[data-reduced-motion="true"] .slogan { opacity: 1; transform: none; }
+[data-solo] .stage { place-items: start; padding: 0; }
+[data-solo] .lockup { width: 1194px; }
+[data-solo] .slogan, [data-solo] .replay { display: none; }
+[data-solo], [data-solo] body { background: transparent; }
+</style>
+</head>
+<body>
+<main class="stage">
+    <div class="stage-tools" aria-label="Intro options">
+        <button class="stage-button" type="button" id="sound-toggle" aria-pressed="false">Sound: Off</button>
+        <button class="stage-button" type="button" id="skip-intro">Skip intro</button>
+    </div>
+    <div class="lockup">
+        <svg class="mark" viewBox="0 12 1194 326" role="img" aria-labelledby="mark-title">
+            <title id="mark-title">Bites2B</title>
+            <g id="camera">
+            <g id="g-2B" class="b"><path d="M 857.6 53.4 L 850.6 54.1 L 843.5 55.5 L 840.7 56.3 L 833.7 58.5 L 826.7 61.4 L 822.5 63.5 L 817.5 66.4 L 813.7 68.9 L 806.3 75 L 800.9 80.3 L 797 85 L 792.3 91.8 L 789.2 97.8 L 786.5 103.8 L 784.5 110.1 L 782.9 116.5 L 782.1 121.4 L 781.3 129.4 L 780.8 132.2 L 780.9 132.8 L 780.6 132.5 L 780.4 132.4 L 791.8 132.4 L 799.1 132.2 L 829.2 132.3 L 830.4 132.2 L 830.2 132.4 L 830.2 132.4 L 830.7 129.1 L 832 123.1 L 833 120.2 L 833.6 118.6 L 835.9 114.1 L 837.3 111.8 L 838.7 110.1 L 841.6 107.1 L 843.6 105.1 L 846.3 103.3 L 849.2 101.7 L 851.4 100.8 L 854.3 100 L 858.1 99.3 L 861 99.2 L 864.6 99.3 L 868.5 99.9 L 870.8 100.4 L 874.2 101.8 L 877.2 103.4 L 880.2 105.6 L 882.2 107.5 L 885.6 111.8 L 887 114.2 L 888.2 116.9 L 889.3 120.2 L 890.2 124.7 L 890.4 128.5 L 890.4 132.3 L 890 135.3 L 889.3 139 L 887.7 144.2 L 886.6 146.8 L 883.8 152.1 L 881.6 155.8 L 879.3 158.8 L 876.8 162.1 L 872.8 166.9 L 869.5 170.3 L 863.1 176.2 L 858.8 180.5 L 845 193 L 839.4 197.6 L 835.9 201.1 L 826 209.5 L 821.1 214.1 L 809.5 224 L 807.7 225.9 L 803.8 229.3 L 778.4 251.8 L 769.8 259.5 L 769.5 259.9 L 769.5 259.9 L 769.4 264 L 769.5 268.4 L 769.6 296.8 L 769.7 298.1 L 769.7 297.9 L 769.3 297.7 L 770.3 297.9 L 950.1 298 L 950.9 297.9 L 950.6 298.1 L 950.8 297.5 L 950.8 254.7 L 950.6 253.7 L 950.6 253.7 L 951 254 L 886.2 253.8 L 868.2 254 L 857.3 253.7 L 855.5 253.4 L 854.3 252.1 L 854.8 250.6 L 855.4 249.9 L 861.6 244.5 L 890.3 218.2 L 908.5 200.9 L 916.1 193.3 L 927.9 181.9 L 929.8 180.3 L 936.7 172.7 L 940.1 167.8 L 942.6 163.8 L 945.7 157.7 L 948.4 149.8 L 949.1 147.1 L 949.9 142.2 L 950.6 135.7 L 950.6 131.5 L 950 124.3 L 949.1 118.7 L 947.7 113 L 946.4 108.7 L 944.7 104 L 943.4 101 L 940.5 95.2 L 937.2 89.2 L 934.7 85.4 L 932.6 82.5 L 931 80.6 L 929.7 78.9 L 923.7 72.9 L 919.8 69.6 L 917.4 67.8 L 913.6 65.3 L 909 62.7 L 904.7 60.7 L 901.3 59.2 L 892.2 56.2 L 885.9 54.7 L 881 54 L 874.6 53.2 L 866.1 53 L 861.1 53.1 Z"/><path fill-rule="evenodd" d="M 1067.2 55 L 1000.1 55.5 L 991.1 55.3 L 959.2 55.3 L 958.1 55.5 L 958.2 55.4 L 958 56.7 L 958 296.3 L 958.2 298 L 958.2 298.1 L 957.9 297.8 L 1015.1 298 L 1080.1 297.6 L 1091 297.1 L 1101.9 296.1 L 1112.7 294.2 L 1125.3 290.9 L 1129.1 289.8 L 1134.2 287.9 L 1141.2 285 L 1144.4 283.4 L 1152.6 278.7 L 1161.5 271.8 L 1166.4 266.9 L 1170.2 261.9 L 1174.8 254.6 L 1175.7 252.7 L 1178 246.2 L 1179.9 238.3 L 1180.5 232.5 L 1180.7 226.5 L 1180.6 222.5 L 1179.7 215.2 L 1178 209 L 1175.8 203.3 L 1172.8 197.5 L 1169.3 192.2 L 1166.6 189.1 L 1163.1 185.8 L 1158.1 181.9 L 1152.2 177.9 L 1148.3 176 L 1139.5 172.3 L 1138.4 171.2 L 1138.4 169.7 L 1139.2 168.4 L 1143.6 165.5 L 1146.5 163.5 L 1152.9 158 L 1154.8 156.1 L 1158.4 151.7 L 1160.9 148.4 L 1162.6 145.2 L 1164.9 140.7 L 1167.1 134.9 L 1167.9 132 L 1169.2 125.2 L 1169.7 119.3 L 1169.5 113.3 L 1168.8 107.6 L 1167.9 102.6 L 1166.8 98.8 L 1165 93.9 L 1163.1 90 L 1160.8 86.3 L 1158.4 82.9 L 1153.7 77.7 L 1150.1 74.4 L 1145.6 71.1 L 1138.9 67 L 1134.3 64.7 L 1127.2 61.9 L 1121.3 59.9 L 1113.6 57.8 L 1109.5 57 L 1102.5 56 L 1087.1 55 Z M 1022.5 102.3 L 1021.4 103.4 L 1020.8 104.8 L 1020.7 108.2 L 1021 123.4 L 1021 144.6 L 1021.2 148.9 L 1021.5 150.2 L 1022.6 151.3 L 1024.9 151.8 L 1040.1 152 L 1066.1 151.8 L 1073.3 151.5 L 1079.4 150.4 L 1083.4 149.2 L 1085.5 148.2 L 1090.8 145.3 L 1093.2 143.2 L 1095.2 141 L 1097 138.5 L 1098.4 135.6 L 1099.3 133 L 1099.8 130.7 L 1100.3 125.4 L 1100.3 123.3 L 1099.9 120 L 1098.6 116 L 1097 113.2 L 1094.4 110.3 L 1090.1 107.1 L 1086 105 L 1082.2 103.7 L 1080.4 103.2 L 1076.3 102.4 L 1071.2 102 L 1037.1 101.7 L 1025 101.9 Z M 1028.3 197.8 L 1023.8 198 L 1022.5 198.5 L 1021.4 199.6 L 1021 201 L 1020.8 214.4 L 1021 242.7 L 1021.1 245.9 L 1021.4 247.4 L 1022.6 248.6 L 1024.9 249.1 L 1036.1 249.2 L 1070.1 249.1 L 1079.2 248.8 L 1084 248.3 L 1088.3 247.5 L 1092.3 246.3 L 1097.6 244.5 L 1101 242.8 L 1104.2 240.5 L 1106 238.9 L 1108.2 235.8 L 1109.7 233 L 1111 228.9 L 1111.5 225.4 L 1111.7 222.5 L 1111.5 219.7 L 1111 217 L 1109.6 213.1 L 1107.2 209.1 L 1105.6 207.3 L 1103.9 205.8 L 1100.1 203.1 L 1094.6 200.5 L 1092.3 199.7 L 1088.2 198.6 L 1080.2 197.9 L 1040.1 197.6 Z"/></g>
+            <g id="g-B" class="o"><path fill-rule="evenodd" d="M149.7 54.4 L138.6 56.3 L129.7 58.4 L115.5 62 L103.9 64.5 L74.4 71.7 L58 75.5 L49.4 77.8 L16.7 85.3 L13.7 86.2 L13.2 86.7 L13 87.5 L13.4 90.3 L25.9 148.5 L32.8 181.6 L34.4 190.2 L35.9 196.5 L39.4 215.3 L42.9 230.5 L52.4 277.2 L56 293.5 L57.4 301.2 L61 317.5 L61.3 318.3 L61.8 318.9 L62.5 319.2 L63.5 319.1 L66.3 318.6 L108.6 308.2 L164.4 294.8 L180.4 290.7 L187.3 288.8 L199.2 284.7 L204.1 282.6 L211.4 279 L215.9 276.4 L220.1 273.6 L227.1 268.6 L230.3 265.8 L233.8 262.3 L237.5 258 L240.6 254.1 L242.9 250.4 L245.4 245.8 L246.9 242.4 L248.9 236.4 L249.6 235.1 L250.9 233.4 L252.8 229.3 L253.7 226.3 L254.5 221.2 L254.5 216.8 L253.6 210.8 L252.7 206.7 L250.8 200.6 L249.4 197.2 L247.5 191 L244.8 184.7 L242.5 181 L239.9 177.6 L233.9 171.6 L230.1 168.5 L227 166.5 L222.4 164.1 L218.3 162.3 L215.3 161.3 L211.4 160.3 L205.5 159.2 L204.7 158.9 L204.3 158.5 L204.4 157.9 L208.3 154.8 L211.8 151.3 L217.4 143.9 L219.7 140.2 L222.8 133.3 L224 129.5 L225 125.5 L225.8 120.5 L226.2 115.5 L226.2 110.5 L225.8 106.5 L224.9 101.5 L223.9 98.7 L223.4 98.3 L222.7 98.3 L220.4 99.9 L219.1 100.6 L217.5 100.9 L215.5 101 L213.6 100.7 L211.5 100 L209.5 99 L207.2 97.3 L206.4 97.1 L205.5 97.1 L202.5 97.8 L199.5 98 L196.8 97.6 L194.1 96.4 L191.8 94.7 L190.4 93.1 L189.3 91.2 L187.9 87.7 L187.3 87.1 L183 86.5 L180.8 85.6 L178 83.5 L176.5 82 L175.7 80.8 L174.5 78 L174.2 76.5 L174.2 74.5 L174.6 71.4 L174.5 70.8 L174.2 70.3 L171.9 68.6 L170.5 67.1 L169.3 65.2 L168.5 63.1 L168.2 61.5 L168.3 59.6 L168.8 57.5 L169.8 55.3 L169.8 54.7 L169.3 54.2 L167.5 53.8 L160.5 53.6 L154.5 53.9Z M135.6 106.4 L129.7 107.4 L121.6 109.2 L115.4 110.8 L104.6 113.2 L87.8 117.4 L85.6 118.1 L84.9 118.4 L84.5 118.9 L84.3 119.6 L84.5 121.2 L88.4 141.3 L89.8 147.5 L92.3 160.4 L93.3 164.3 L93.8 164.9 L94.5 165.1 L96.5 164.9 L107.6 162.2 L115.3 160.7 L131.3 156.7 L142.2 153.6 L146.3 151.8 L148.8 150.4 L154.4 145.9 L156.4 143.9 L157.8 142.3 L159.3 139.8 L160.8 136.3 L161.6 133.2 L162 129.5 L161.9 126.5 L161.6 123.8 L160.7 120.7 L158.8 116.7 L156.6 113.9 L154.1 111.4 L151.7 109.7 L148.5 108 L146.4 107.2 L142.2 106.5 L139.5 106.3Z M159.8 197.4 L141.7 201.3 L124.4 205.8 L112.6 208.3 L103.9 210.5 L102.7 211.1 L102.4 211.7 L102.4 212.3 L104.1 221.5 L106.6 232.8 L110.9 255.5 L111.4 257.2 L111.8 257.6 L113.3 257.7 L133.5 253 L154.4 247.8 L165.4 244.8 L172.5 242 L177 239.5 L180.3 236.8 L183.6 233.1 L185.6 230.1 L187.1 226.5 L187.9 223.5 L188.2 219.5 L188.1 215.5 L187.6 212.9 L185.8 208.7 L183.9 205.7 L181.6 202.9 L179.4 201 L176.9 199.6 L174.1 198.4 L170.1 197.5 L167.5 197.2 L162.5 197.1Z"/><path id="bite-patch" d="M166.8 53.5 L161.6 54.3 L160.8 54.5 L160.4 54.9 L160 56.5 L160 65.5 L160.3 67.2 L160.7 67.8 L212.1 112.4 L213.5 113 L214.5 113.1 L224.5 113.2 L225.3 113 L225.8 112.4 L225.9 111.5 L225.7 106.6 L223.8 97.6 L221.7 90.8 L218.8 84.7 L215.5 79.1 L213.4 76.2 L208.1 70.3 L202.9 65.6 L199.4 63.1 L195.1 60.4 L188.3 57.2 L185.4 56.2 L178.3 54.4 L170.2 53.5Z"/></g>
+            <g id="g-i" class="o"><path fill-rule="evenodd" d="M250.8 106.5 L250.4 106.9 L250.2 107.6 L250 109.5 L249.8 132.5 L249.9 185.5 L250.1 195.5 L249.8 202.5 L250 253.5 L249.7 278.5 L249.9 288.5 L250.2 289.2 L250.8 289.6 L252.5 289.8 L299.5 289.9 L305.5 289.8 L307.3 289.7 L307.8 289.2 L308.1 288.5 L308.3 285.5 L308.3 173.5 L308.1 149.5 L308.5 145.7 L308.5 142.9 L308.2 114.5 L308 108.5 L307.8 107.6 L307.3 107 L306.5 106.6 L300.5 106.3 L289.5 106.4 L257.5 106.2 L252.5 106.3Z"/><path fill-rule="evenodd" d="M275.6 28.4 L270.6 29.3 L266.8 30.3 L262.7 32.2 L259.6 34 L256.7 36.1 L254 38.5 L252.1 40.7 L250.1 43.6 L248.6 46.1 L247.4 48.8 L246.3 51.7 L245.2 57.5 L245.1 61.5 L245.3 65.5 L246.4 71.1 L247.5 74.1 L248.7 76.7 L250.3 79.2 L252 81.4 L255 84.5 L257.1 86.5 L260.6 88.9 L263.7 90.8 L265.7 91.7 L269.5 93 L272.5 93.8 L274.5 94.1 L278.5 94.2 L282.5 94 L285.2 93.6 L288.3 92.7 L291.2 91.7 L293.2 90.7 L296.9 88.4 L299.8 86.3 L301.9 84.4 L303.8 82.3 L307.2 77.7 L308.6 75.1 L309.8 72.4 L310.7 69.3 L311.6 64.2 L311.8 61.5 L311.7 58.5 L310.5 52.1 L309.4 49.1 L307.8 45.7 L306.3 43.2 L304.1 40.4 L302.2 38.3 L299.5 36 L297.8 34.6 L294.8 32.7 L292.2 31.4 L289.3 30.3 L285.4 29.2 L281.2 28.5 L278.5 28.3Z"/></g>
+            <g id="g-t" class="o"><path fill-rule="evenodd" d="M368.8 71.3 L362.2 73.7 L355.8 76.4 L337.5 83.1 L331.2 85.7 L316.5 91.1 L315.3 91.8 L315.1 92.6 L315.1 93.5 L316.1 97.5 L325.7 130.7 L326.1 133.5 L325.9 134.3 L325.4 134.9 L324.1 135.5 L307.9 141.5 L307.5 141.9 L307.2 142.6 L307.4 144.2 L315.2 171.4 L317.7 179.6 L319.4 186.1 L320 187.4 L320.6 187.8 L321.4 187.8 L322.1 187.6 L338.5 181.6 L339.3 182.1 L339.7 182.7 L341.6 188.7 L349.2 215.4 L356.2 239.4 L361.3 255.3 L363.1 259.4 L366.4 266.1 L369.1 270.3 L372.5 275 L376.8 279.7 L380 282.5 L383 284.5 L386.1 286.4 L389.5 288 L393.7 289.7 L396.7 290.7 L404.5 292 L408.5 292.3 L412.5 292.3 L419.4 291.7 L424.5 290.9 L429.3 289.7 L435.4 287.8 L438.2 286.6 L447.4 282 L453.1 278.6 L461.3 271.8 L467.3 265.8 L472.2 259.7 L472.8 258.4 L472.8 257.6 L472.3 256.2 L470.8 253.7 L465.4 245.1 L459.6 236.8 L455.5 230 L453.5 227.1 L450.5 223.6 L449.1 224.5 L445.2 227.6 L440.9 231.4 L438 233.5 L435.3 234.8 L432.4 235.7 L430.5 235.9 L427.5 235.9 L425.7 235.7 L422.8 234.7 L421.6 234 L419.9 232.6 L418.4 231.1 L417.1 229.3 L415.2 225.3 L412.3 216.3 L402.7 181.8 L399.4 171.2 L397.4 162.6 L397.6 162 L398.7 161.3 L429.1 150.5 L434.8 148.3 L435.4 148 L435.9 147.3 L436 146.5 L435.9 145.6 L427.8 117.6 L422.7 101.7 L422 100.7 L421.5 100.4 L402.7 107.3 L394.9 110.4 L385.3 113.8 L384.5 114 L383.7 113.9 L383 113.4 L382.2 111.4 L379.7 101.7 L377.4 94.2 L371.7 73.7 L370.8 71.7 L370.3 71.2 L369.5 71.1Z"/></g>
+            <g id="g-e" class="o"><path fill-rule="evenodd" d="M550.8 107.5 L539.5 109.1 L529.5 112 L522.1 114.6 L512.2 119.6 L506.5 123 L499.2 128.7 L495.4 131.9 L490.3 136.8 L487 140.5 L482.5 146 L479.2 150.7 L476.5 155 L473.7 160.2 L471.7 164.2 L467.3 175.7 L464.5 185 L463.4 189.8 L462.4 196.7 L461.6 206.5 L461.5 214 L462.1 221.5 L463.3 228.4 L465.3 236.3 L466 238.5 L468.3 244.3 L470.2 248.3 L474.5 256 L478.6 261.9 L484 268.5 L489.6 273.9 L496.7 279.7 L505.2 285.3 L511 288.5 L523.6 293.8 L528.8 295.6 L536.6 297.8 L539.7 298.6 L545.6 299.7 L554.5 300.8 L562.5 301 L570.4 300.6 L576.5 299.8 L582.3 298.7 L590 296.5 L597.1 293.6 L605.5 289 L611.6 285.1 L616.4 280.9 L616.7 280.3 L616.7 279.7 L616.4 279.1 L609.4 268.2 L605.7 262.8 L596.3 248.2 L592.4 242.6 L591.4 242.8 L585.3 246.8 L580.5 249.1 L574.5 251.1 L570.5 252 L566.3 252.6 L563.5 252.8 L559.5 252.8 L553.5 252.1 L547.7 250.7 L542.6 248.9 L539.8 247.7 L536.6 246 L534.1 244.4 L531.3 242.3 L527 238.5 L523.5 234 L521.3 230.2 L520.2 227.3 L519.4 224.3 L518.5 220 L518 216.5 L518 214.6 L518.2 213.8 L518.5 213.5 L519 213.6 L531.4 217.1 L538.7 219.7 L580.3 232.3 L589.8 235.6 L596.2 237.4 L607.5 241 L626.3 246.3 L632.3 248.2 L638.1 250.5 L639.4 250.7 L639.9 250.3 L640.3 249.8 L643.8 242.3 L646.8 235.3 L650.1 225.5 L652.7 216.3 L653.9 209.5 L654.9 198.5 L655 190.5 L654.8 185.5 L653.6 177.8 L652 170.5 L650.9 166.6 L647.9 158.5 L644.7 151.8 L641.4 146.2 L635.2 138.3 L632.4 135.1 L629.9 132.6 L624.4 128 L616.3 122.2 L608 117.5 L598.3 113.2 L589.2 110.4 L582.5 108.9 L576.5 107.8 L570.5 107.1 L564.5 106.8 L558.5 106.9Z M557.6 155.4 L552.6 156.2 L547.5 157.9 L544 159.5 L539 162.5 L537.3 163.8 L535.2 165.7 L531.6 170.1 L529.4 173.8 L529.4 174.3 L529.7 174.8 L534.7 176.8 L546.8 180.7 L553.2 182.4 L576.7 189.7 L596.5 195.4 L597.1 193.5 L597.5 188.5 L597.2 183.5 L596.6 179.8 L595.4 176.1 L593.9 172.6 L592 169.6 L589.2 166.3 L585.5 163 L582.5 161 L578.5 159 L574.3 157.3 L570.4 156.3 L565.4 155.4 L561.5 155.2Z"/></g>
+            <g id="g-s" class="o"><path fill-rule="evenodd" d="M715.8 120.4 L707.5 122.1 L700.7 124.2 L697.9 125.4 L691.2 128.7 L686.2 131.7 L681.7 135.2 L678.1 138.6 L675.1 141.7 L671.1 146.7 L667.7 152.2 L665.7 156.2 L664.3 159.7 L662.3 165.7 L661.4 170.8 L660.9 177.5 L661 182.5 L661.4 185.3 L662.4 190.1 L663.3 193.3 L664.7 196.8 L666.3 200.2 L667.8 202.7 L671.7 207.8 L675.7 211.8 L679.4 215.1 L681.7 216.9 L684.6 218.9 L692.2 223.4 L711.2 233.3 L720.7 238.8 L723.7 240.9 L725.2 242.3 L726.6 243.8 L727.4 245 L728.1 246.5 L728.4 248.5 L728.2 250.5 L727.8 252.3 L727.1 253.6 L725.7 255.2 L723.4 256.9 L720.5 258 L717.5 258.4 L713.5 258.3 L708.7 257.7 L704.8 256.7 L699.6 254.9 L691.6 250.9 L684.1 246.4 L674.5 238 L669.4 233.1 L665.7 228.8 L665.2 228.4 L664.6 228.3 L663.4 229 L639.5 253 L635.4 256.9 L632.6 260.1 L632.4 260.7 L632.3 261.4 L632.6 262 L634.5 265 L637.6 268.9 L641.9 273.6 L648 279.5 L652.4 283 L654.8 284.7 L659.7 287.8 L668.1 292.4 L675.6 295.9 L680.6 297.8 L688.9 300.6 L696.8 302.6 L702.6 303.7 L710.9 304.5 L720.5 304.7 L729.5 303.9 L731.7 303.4 L736.2 302.6 L740.1 301.5 L744.5 300 L750.8 297.4 L755.3 294.8 L761.3 290.8 L765.6 287.1 L769.2 283.7 L772.9 279.4 L777.9 272.4 L780.3 267.8 L782.6 262.2 L783.8 258.4 L784.8 254.4 L785.3 249.5 L785.3 245.5 L785.1 241.5 L784.7 237.6 L783.8 233.6 L782.6 229.8 L780.6 224.9 L778.9 221.6 L777.3 219.2 L773.9 214.6 L771.9 212.6 L769.8 210.7 L761.8 204.6 L758.8 202.6 L753.2 199.3 L747.4 196.1 L730.7 187.8 L725.7 184.9 L722.2 182.4 L719.6 179.8 L718.4 177.2 L718.2 175.5 L718.2 173.6 L718.6 172.1 L719.2 170.7 L720.5 169 L722.8 167.3 L724.8 166.3 L728.4 165.6 L731.5 165.4 L733.8 165.6 L737.4 166.2 L742 167.5 L746.3 169.2 L751.7 171.8 L758.3 176.2 L761.6 178.9 L765.8 182.7 L772 189.6 L772.6 189.9 L773.4 189.9 L774.1 189.6 L776.2 187.7 L797.8 167.4 L805.7 160.2 L806.7 159.2 L806.9 158.5 L806.9 157.7 L806.5 157 L804.5 154 L800.9 149.6 L796.8 145.7 L789.8 139.6 L783.9 135.6 L778.9 132.6 L771.5 129 L763.8 125.6 L758.6 123.8 L751.5 122 L746.5 121 L738.5 120 L733.5 119.7 L727.5 119.5 L720.5 119.9Z"/></g>
+            <g id="crumbs" class="o" aria-hidden="true"></g>
+            </g>
+        </svg>
+        <p class="slogan" id="slogan"></p>
+    </div>
+    <div class="stage-actions">
+        <button class="stage-button stage-button-primary" type="button" id="play-intro">Play intro</button>
+        <button class="stage-button stage-button-primary" type="button" id="continue-marketing" hidden></button>
+        <span id="intro-status" class="sr-only" aria-live="polite"></span>
+    </div>
+</main>
+<script>
+(() => {
+    "use strict";
+    const params = new URLSearchParams(location.search);
+    const root = document.documentElement;
+    const capture = params.has("capture");
+    if (capture) root.setAttribute("data-capture", "");
+    if (params.has("solo")) root.setAttribute("data-solo", "");
+    root.dataset.theme = params.get("theme") === "dark" ? "dark" : "light";
+    const lang = params.get("lang") === "en" ? "en" : "bg";
+    root.lang = lang;
+    const slogan = document.getElementById("slogan");
+    slogan.textContent = lang === "en" ? "Bring order to your business." : "Сложи ред в бизнеса си.";
+    const reduced = !capture && matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced) root.dataset.reducedMotion = "true";
+    const playButton = document.getElementById("play-intro");
+    const continueButton = document.getElementById("continue-marketing");
+    const soundButton = document.getElementById("sound-toggle");
+    const skipButton = document.getElementById("skip-intro");
+    const status = document.getElementById("intro-status");
+    const copy = lang === "en"
+        ? {play: "Play intro", skip: "Skip intro", soundOn: "Sound: On", soundOff: "Sound: Off", soundLabel: "Toggle sound", go: "See how →", finished: "The intro is complete."}
+        : {play: "Пусни интрото", skip: "Пропусни", soundOn: "Звук: включен", soundOff: "Звук: изключен", soundLabel: "Включи или изключи звука", go: "Виж как →", finished: "Интрото завърши."};
+    playButton.textContent = copy.play;
+    skipButton.textContent = copy.skip;
+    soundButton.textContent = copy.soundOff;
+    soundButton.setAttribute("aria-label", copy.soundLabel);
+    continueButton.textContent = copy.go;
+
+    const svg = document.querySelector(".mark");
+    const patch = document.getElementById("bite-patch");
+    const crumbLayer = document.getElementById("crumbs");
+    const camera = document.getElementById("camera");
+    const LETTERS = ["B", "i", "t", "e", "s"];
+    const ALL = [...LETTERS, "2B"];
+
+    // ---- Geometry: outline samples and pivots, from the real glyph paths -------------------
+    const glyph = {};
+    for (const name of ALL) {
+        const g = document.getElementById("g-" + name);
+        const box = g.getBBox();
+        // The traced outlines are polylines, so their points come straight from the path data,
+        // subdivided to at most 4 units (far cheaper on phones than getPointAtLength).
+        const pts = [];
+        for (const p of g.querySelectorAll("path:not(#bite-patch)")) {
+            for (const loop of p.getAttribute("d").split("Z")) {
+                const v = loop.match(/-?[\d.]+/g);
+                if (!v || v.length < 4) continue;
+                const n = v.length / 2;
+                for (let k = 0; k < n; k += 1) {
+                    const x0 = +v[2 * k], y0 = +v[2 * k + 1];
+                    const x1 = +v[(2 * k + 2) % v.length], y1 = +v[(2 * k + 3) % v.length];
+                    const steps = Math.max(1, Math.ceil(Math.hypot(x1 - x0, y1 - y0) / 4));
+                    for (let j = 0; j < steps; j += 1) pts.push([x0 + (x1 - x0) * j / steps, y0 + (y1 - y0) * j / steps]);
+                }
+            }
+        }
+        glyph[name] = {g, pts, c: [box.x + box.width / 2, box.y + box.height / 2]};
+    }
+    // The 2B meets the s with the 2's upper body; the corner of the 2's base ends up under the s,
+    // and the B trails behind the 2.
+    glyph["2B"].contactPts = glyph["2B"].pts.filter(([x, y]) => x < 957.9 && y > 136.3 && y < 211.1);
+    for (const name of LETTERS) glyph[name].contactPts = glyph[name].pts;
+
+    const rad = Math.PI / 180;
+    const place = (pt, pose, c) => {
+        const r = pose.a * rad, cs = Math.cos(r), sn = Math.sin(r);
+        const dx = pt[0] - c[0], dy = pt[1] - c[1];
+        return [c[0] + dx * cs - dy * sn + pose.x, c[1] + dx * sn + dy * cs + pose.y];
+    };
+    const BIN = 5;
+    const profile = (pts, pose, c, side) => {
+        const m = new Map();
+        for (const pt of pts) {
+            const [x, y] = place(pt, pose, c);
+            const b = Math.floor(y / BIN), v = m.get(b);
+            if (v === undefined || (side < 0 ? x < v : x > v)) m.set(b, x);
+        }
+        return m;
+    };
+    // Horizontal clearance between the right glyph's leading edge and the left glyph's trailing edge.
+    const gap = (rightName, rightPose, leftName, leftPose) => {
+        const R = glyph[rightName], L = glyph[leftName];
+        const lead = profile(R.contactPts, rightPose, R.c, -1);
+        const trail = profile(L.contactPts, leftPose, L.c, 1);
+        let g = Infinity;
+        for (const [b, x] of lead) {
+            const t = trail.get(b);
+            if (t !== undefined) g = Math.min(g, x - t);
+        }
+        return g;
+    };
+
+    // ---- Easing and small physics helpers -----------------------------------------------
+    const clamp01 = (v) => v < 0 ? 0 : v > 1 ? 1 : v;
+    const outPow = (u, p) => 1 - Math.pow(1 - clamp01(u), p);
+    const inPow = (u, p) => Math.pow(clamp01(u), p);
+    // Damped rocking that starts at 1 and settles to exactly 0 at u = 1.
+    const rock = (u, decay, cycles) => {
+        u = clamp01(u);
+        return Math.exp(-decay * u) * Math.cos(2 * Math.PI * cycles * u) * (1 - Math.pow(u, 6));
+    };
+
+    // ---- Choreography -------------------------------------------------------------------
+    const FLOOR = 326;
+    // Deliberately scattered landing: wider spacing, alternating tilts. dx/a are offsets from the logo.
+    const SCATTER = {
+        B: {dx: 10, a: -6, drift: 18, spin: -15, at: 0.12},
+        i: {dx: 52, a: 10, drift: 22, spin: 17, at: 0.29},
+        t: {dx: 104, a: -8, drift: -18, spin: -13, at: 0.44},
+        e: {dx: 166, a: 12, drift: 24, spin: 18, at: 0.58},
+        s: {dx: 236, a: -10, drift: -20, spin: -16, at: 0.71}
+    };
+    const FALL = 0.46, BOUNCE1 = 26, BOUNCE2 = 6;
+    const HOP = {s: 46, e: 38, t: 31, i: 25, B: 18};
+    const PUSH = 0.6;
+    const T = {};
+
+    const restPose = {};
+    for (const name of LETTERS) {
+        const s = SCATTER[name], G = glyph[name];
+        let lowest = -Infinity;
+        for (const pt of G.pts) lowest = Math.max(lowest, place(pt, {x: s.dx, y: 0, a: s.a}, G.c)[1]);
+        restPose[name] = {x: s.dx, y: FLOOR - lowest, a: s.a};
+    }
+
+    let dropFrom = -900, entryX = 1300;
+    const measure = () => {
+        const rect = svg.getBoundingClientRect();
+        const scale = rect.width / 1194 || 1;
+        dropFrom = -(rect.top / scale) - 420;
+        entryX = (innerWidth - rect.left) / scale - 768 + 60;
+    };
+    measure();
+
+    const fallPose = (name, t) => {
+        const s = SCATTER[name], rest = restPose[name];
+        const tau = t - s.at;
+        const startY = dropFrom - 200 * LETTERS.indexOf(name) / 5;
+        const height = rest.y - startY;
+        const g = 2 * height / (FALL * FALL);
+        if (tau < FALL) {
+            const w = tau / FALL;
+            return {x: rest.x + s.drift * (1 - w) * (1 - w), y: startY + height * w * w, a: rest.a + s.spin * (1 - w) * (1 - w)};
+        }
+        const v1 = Math.sqrt(2 * g * BOUNCE1), d1 = 2 * v1 / g;
+        const v2 = Math.sqrt(2 * g * BOUNCE2), d2 = 2 * v2 / g;
+        let after = tau - FALL, lift = 0;
+        if (after < d1) lift = v1 * after - g * after * after / 2;
+        else if (after < d1 + d2) { const k = after - d1; lift = v2 * k - g * k * k / 2; }
+        const tilt = Math.sign(s.spin) * 3.2 * Math.exp(-(tau - FALL) / 0.12) * Math.sin(2 * Math.PI * (tau - FALL) / 0.26);
+        return {x: rest.x, y: rest.y - lift, a: rest.a + tilt};
+    };
+
+    const pushPose = (name, t) => {
+        const rest = restPose[name], u = clamp01((t - T.hit[name]) / PUSH);
+        const w = clamp01(u / 0.62);
+        return {
+            x: rest.x * (1 - outPow(u, 3.2)),
+            y: rest.y * (1 - outPow(u, 2.4)) - HOP[name] * 4 * w * (1 - w),
+            a: rest.a * rock(u, 4.2, 1.15)
+        };
+    };
+
+    const blueEntry = 0.34, bluePush = 0.7;
+    const bluePose = (t) => {
+        const fromX = entryX + T.cam;
+        if (t < T.blueIn) return {x: fromX, y: 0, a: 0};
+        if (t < T.contact) {
+            const u = (t - T.blueIn) / blueEntry;
+            return {x: fromX + (T.contactX - fromX) * inPow(u, 1.7), y: 0, a: 0};
+        }
+        const u = clamp01((t - T.contact) / bluePush), w = clamp01(u / 0.4);
+        return {
+            x: T.contactX * (1 - outPow(u, 2.4)),
+            y: -9 * 4 * w * (1 - w),
+            a: -2.6 * Math.exp(-5 * u) * Math.sin(2 * Math.PI * 1.1 * u) * (1 - Math.pow(u, 6))
+        };
+    };
+
+    const naturalPose = (name, t) => {
+        if (name === "2B") return bluePose(t);
+        if (t < SCATTER[name].at) return null;
+        if (t < T.hit[name]) return fallPose(name, t);
+        return pushPose(name, t);
+    };
+    // Left-to-right: once a glyph is pushing, it is blocked by the glyph in front of it, so it can
+    // press against it but never pass through. Final gaps are never blocked, so the logo is exact.
+    const ORDER = ["B", "i", "t", "e", "s", "2B"];
+    const FINAL = {x: 0, y: 0, a: 0};
+    const floorGap = {};
+    const posesAt = (t) => {
+        const poses = {};
+        for (let k = 0; k < ORDER.length; k += 1) {
+            const name = ORDER[k];
+            let pose = naturalPose(name, t);
+            const left = ORDER[k - 1];
+            const pushing = name === "2B" ? t >= T.contact : pose && t >= T.hit[name];
+            if (pose && left && pushing && poses[left]) {
+                const g = gap(name, pose, left, poses[left]);
+                if (g < floorGap[name]) pose = {...pose, x: pose.x + floorGap[name] - g};
+            }
+            poses[name] = pose;
+        }
+        return poses;
+    };
+
+    // Timeline: contact detection decides each hit, so the reaction travels at the speed of the push.
+    const buildTimeline = () => {
+        for (let k = 1; k < ORDER.length; k += 1) floorGap[ORDER[k]] = Math.min(0, gap(ORDER[k], FINAL, ORDER[k - 1], FINAL));
+        T.landed = SCATTER.s.at + FALL + 0.3;
+        T.blueIn = T.landed + 0.32;
+        T.contact = T.blueIn + blueEntry;
+        let lo = 0, hi = 2400;
+        for (let k = 0; k < 24; k += 1) {
+            const mid = (lo + hi) / 2;
+            if (gap("2B", {x: mid, y: 0, a: 0}, "s", restPose.s) > 0) hi = mid; else lo = mid;
+        }
+        T.contactX = hi;
+        // Camera: centre the widest moment (scattered word plus the incoming 2B), then return to the logo.
+        T.cam = hi / 2;
+        T.hit = {s: T.contact};
+        const chain = ["s", "e", "t", "i", "B"];
+        for (let k = 1; k < chain.length; k += 1) {
+            const pusher = chain[k - 1], name = chain[k];
+            T.hit[name] = Infinity;
+            const touches = (t) => gap(pusher, pushPose(pusher, t), name, restPose[name]) <= 0.5;
+            // Coarse 8 ms scan, then refine to 1 ms inside the step that first touches.
+            for (let t = T.hit[pusher]; t < T.hit[pusher] + PUSH; t += 0.008) {
+                if (!touches(t)) continue;
+                let fine = Math.max(T.hit[pusher], t - 0.008);
+                while (fine < t && !touches(fine)) fine += 0.001;
+                T.hit[name] = fine;
+                break;
+            }
+            if (!Number.isFinite(T.hit[name])) T.hit[name] = T.hit[pusher] + 0.08;
+        }
+        T.settled = Math.max(T.contact + bluePush, ...chain.map((n) => T.hit[n] + PUSH));
+        T.bite = T.settled + 0.22;
+        T.slogan = T.bite + 0.32;
+        T.end = T.slogan + 0.62;
+    };
+    buildTimeline();
+
+    // Crumbs: small pieces of the B, thrown from the bite notch.
+    const CRUMBS = [
+        {x: 196, y: 70, r: 6.5, vx: 230, vy: -330},
+        {x: 214, y: 86, r: 4.8, vx: 300, vy: -220},
+        {x: 181, y: 60, r: 4.2, vx: 150, vy: -400},
+        {x: 222, y: 98, r: 3.6, vx: 340, vy: -140}
+    ];
+    const crumbEls = CRUMBS.map((c) => {
+        const el = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        el.setAttribute("r", c.r);
+        el.setAttribute("opacity", "0");
+        crumbLayer.appendChild(el);
+        return el;
+    });
+
+    const fmt = (v) => Math.round(v * 100) / 100;
+    const cameraX = (t) => t >= T.end ? 0 : -T.cam * (t < T.contact ? 1 : 1 - outPow((t - T.contact) / (bluePush + 0.25), 2.4));
+    const render = (t) => {
+        const cam = cameraX(t);
+        if (cam === 0) camera.removeAttribute("transform"); else camera.setAttribute("transform", `translate(${fmt(cam)} 0)`);
+        const poses = posesAt(t);
+        for (const name of ALL) {
+            const G = glyph[name];
+            let pose = poses[name];
+            if (!pose) { G.g.setAttribute("visibility", "hidden"); continue; }
+            G.g.removeAttribute("visibility");
+            if (name === "B" && t > T.bite) {
+                const k = t - T.bite;
+                pose = {...pose, a: pose.a + 2.4 * Math.exp(-k / 0.11) * Math.sin(2 * Math.PI * k / 0.24)};
+            }
+            if (t >= T.end || (pose.x === 0 && pose.y === 0 && pose.a === 0)) { G.g.removeAttribute("transform"); continue; }
+            G.g.setAttribute("transform", `translate(${fmt(pose.x)} ${fmt(pose.y)}) rotate(${fmt(pose.a)} ${fmt(G.c[0])} ${fmt(G.c[1])})`);
+        }
+        const bitten = t >= T.bite;
+        patch.setAttribute("visibility", bitten ? "hidden" : "visible");
+        CRUMBS.forEach((c, k) => {
+            const tau = t - T.bite;
+            const el = crumbEls[k];
+            if (tau < 0 || tau > 0.7) { el.setAttribute("opacity", "0"); return; }
+            el.setAttribute("cx", fmt(c.x + c.vx * tau));
+            el.setAttribute("cy", fmt(c.y + c.vy * tau + 0.5 * 1500 * tau * tau));
+            el.setAttribute("opacity", fmt(tau < 0.38 ? 1 : 1 - (tau - 0.38) / 0.32));
+        });
+        const s = clamp01((t - T.slogan) / 0.55), e = outPow(s, 3);
+        slogan.style.opacity = String(e);
+        slogan.style.transform = `translateY(${fmt(10 * (1 - e))}px)`;
+    };
+
+    // ---- Sound: generated locally with Web Audio; no downloaded or third-party effects ----
+    const SOUND_KEY = "bites2b.marketing.intro.sound";
+    const getSoundPreference = () => {
+        try { return sessionStorage.getItem(SOUND_KEY) === "on"; } catch (_) { return false; }
+    };
+    const setSoundPreference = (enabled) => {
+        try { sessionStorage.setItem(SOUND_KEY, enabled ? "on" : "off"); } catch (_) { /* private mode */ }
+    };
+    let soundEnabled = getSoundPreference(), audio = null, master = null, noise = null;
+    const syncSoundButton = () => {
+        soundButton.textContent = soundEnabled ? copy.soundOn : copy.soundOff;
+        soundButton.setAttribute("aria-pressed", String(soundEnabled));
+    };
+    const audioFailed = () => {
+        soundEnabled = false;
+        setSoundPreference(false);
+        syncSoundButton();
+    };
+    const unlockAudio = () => {
+        if (!soundEnabled) return;
+        try {
+            const Audio = window.AudioContext || window.webkitAudioContext;
+            if (!Audio) throw new Error("Web Audio unavailable");
+            if (!audio) {
+                audio = new Audio();
+                master = audio.createGain();
+                master.gain.value = 0.42;
+                master.connect(audio.destination);
+                noise = audio.createBuffer(1, Math.ceil(audio.sampleRate * 0.24), audio.sampleRate);
+                const samples = noise.getChannelData(0);
+                for (let i = 0; i < samples.length; i += 1) samples[i] = (Math.random() * 2 - 1) * (1 - i / samples.length * 0.35);
+            }
+            const resumed = audio.resume();
+            if (resumed && typeof resumed.catch === "function") resumed.catch(audioFailed);
+        } catch (_) { audioFailed(); }
+    };
+    const tone = (frequency, endFrequency, at, duration, peak, type = "sine") => {
+        if (!soundEnabled || !audio || audio.state !== "running") return;
+        try {
+            const osc = audio.createOscillator(), gain = audio.createGain();
+            osc.type = type;
+            osc.frequency.setValueAtTime(frequency, at);
+            osc.frequency.exponentialRampToValueAtTime(Math.max(1, endFrequency), at + duration);
+            gain.gain.setValueAtTime(0.0001, at);
+            gain.gain.linearRampToValueAtTime(peak, at + 0.006);
+            gain.gain.exponentialRampToValueAtTime(0.0001, at + duration);
+            osc.connect(gain); gain.connect(master);
+            osc.start(at); osc.stop(at + duration + 0.01);
+        } catch (_) { audioFailed(); }
+    };
+    const noiseBurst = (at, duration, peak, frequency, q, filterType) => {
+        if (!soundEnabled || !audio || audio.state !== "running" || !noise) return;
+        try {
+            const source = audio.createBufferSource(), filter = audio.createBiquadFilter(), gain = audio.createGain();
+            source.buffer = noise;
+            filter.type = filterType; filter.frequency.value = frequency; filter.Q.value = q;
+            gain.gain.setValueAtTime(Math.max(0.0001, peak), at);
+            gain.gain.exponentialRampToValueAtTime(0.0001, at + duration);
+            source.connect(filter); filter.connect(gain); gain.connect(master);
+            source.start(at); source.stop(at + duration + 0.01);
+        } catch (_) { audioFailed(); }
+    };
+    const clatter = () => {
+        if (!soundEnabled || !audio || audio.state !== "running") return;
+        const at = audio.currentTime, pitch = 0.88 + Math.random() * 0.24, level = 0.07 + Math.random() * 0.035;
+        tone(820 * pitch, 510 * pitch, at, 0.12, level, "triangle");
+        tone(1370 * pitch, 920 * pitch, at + 0.014, 0.085, level * 0.55, "sine");
+        noiseBurst(at, 0.075, level * 0.45, 2100 * pitch, 1.4, "bandpass");
+    };
+    const impact = (secondary = false) => {
+        if (!soundEnabled || !audio || audio.state !== "running") return;
+        const at = audio.currentTime, scale = secondary ? 0.22 : 1;
+        tone(104, 48, at, 0.19, 0.25 * scale, "sine");
+        tone(64, 38, at + 0.008, 0.13, 0.13 * scale, "triangle");
+        noiseBurst(at, 0.075, 0.16 * scale, 520, 0.65, "lowpass");
+    };
+    const crunch = () => {
+        if (!soundEnabled || !audio || audio.state !== "running") return;
+        const at = audio.currentTime;
+        noiseBurst(at, 0.16, 0.19, 1850, 0.9, "bandpass");
+        tone(2380, 1320, at + 0.004, 0.095, 0.095, "triangle");
+        tone(1680, 940, at + 0.035, 0.12, 0.07, "sine");
+    };
+    syncSoundButton();
+    soundButton.addEventListener("click", () => {
+        soundEnabled = !soundEnabled;
+        setSoundPreference(soundEnabled);
+        syncSoundButton();
+        if (soundEnabled) unlockAudio();
+    });
+
+    // ---- Playback: the approved timeline and choreography are unchanged --------------------
+    let start = 0, frame = 0, lastSoundTime = -0.001, finished = false;
+    const soundEvents = [
+        ...LETTERS.map((name) => ({at: SCATTER[name].at + FALL, type: "land"})),
+        {at: T.contact, type: "impact"},
+        ...["e", "t", "i", "B"].map((name) => ({at: T.hit[name], type: "secondary"})),
+        {at: T.bite, type: "bite"}
+    ].sort((a, b) => a.at - b.at);
+    const soundBetween = (from, to) => {
+        for (const event of soundEvents) {
+            if (event.at <= from || event.at > to) continue;
+            if (event.type === "land") clatter();
+            else if (event.type === "impact") impact(false);
+            else if (event.type === "secondary") impact(true);
+            else if (event.type === "bite") crunch();
+        }
+    };
+    const finish = () => {
+        if (finished) return;
+        finished = true;
+        continueButton.hidden = false;
+        playButton.hidden = true;
+        status.textContent = copy.finished;
+    };
+    const tellParent = (action) => {
+        if (window.parent !== window) window.parent.postMessage({type: "bites2b:intro:" + action}, location.origin);
+        else if (action === "continue" || action === "skip") location.href = "/marketing";
+    };
+    continueButton.addEventListener("click", () => tellParent("continue"));
+    skipButton.addEventListener("click", () => tellParent("skip"));
+    const tick = (now) => {
+        const t = (now - start) / 1000;
+        render(t);
+        soundBetween(lastSoundTime, t);
+        lastSoundTime = t;
+        if (t < T.end) frame = requestAnimationFrame(tick);
+        else finish();
+    };
+    const play = () => {
+        if (reduced || capture) return;
+        if (soundEnabled) unlockAudio();
+        cancelAnimationFrame(frame);
+        finished = false;
+        continueButton.hidden = true;
+        playButton.hidden = true;
+        lastSoundTime = -0.001;
+        measure();
+        start = performance.now() + 120;
+        render(0);
+        frame = requestAnimationFrame(tick);
+    };
+    playButton.addEventListener("click", play);
+    addEventListener("resize", measure);
+    window.wordmark = {
+        timeline: T, restPose, floorGap, cameraX,
+        seek: (t) => render(t),
+        // Smallest clearance between neighbours during the reaction, relative to the floor that
+        // the final logo itself allows (0 or the logo's own overlap); negative means interpenetration.
+        minGaps: () => {
+            const out = {};
+            for (let k = 1; k < ORDER.length; k += 1) {
+                const r = ORDER[k], l = ORDER[k - 1];
+                let m = Infinity, at = 0, maxStep = 0, prevX = null;
+                for (let t = T.landed; t < T.settled + 0.05; t += 1 / 120) {
+                    const poses = posesAt(t);
+                    if (!poses[r] || !poses[l]) continue;
+                    const g = gap(r, poses[r], l, poses[l]) - floorGap[r];
+                    if (g < m) { m = g; at = t; }
+                    if (prevX !== null) maxStep = Math.max(maxStep, Math.abs(poses[r].x - prevX));
+                    prevX = poses[r].x;
+                }
+                out[r + ">" + l] = {minClearance: fmt(m), at: fmt(at), maxStepPer120Hz: fmt(maxStep)};
+            }
+            const rests = {};
+            for (let k = 1; k < LETTERS.length; k += 1) rests[LETTERS[k] + ">" + LETTERS[k - 1]] = fmt(gap(LETTERS[k], restPose[LETTERS[k]], LETTERS[k - 1], restPose[LETTERS[k - 1]]));
+            out.scatterGaps = rests;
+            return out;
+        }
+    };
+    if (reduced) {
+        render(T.end + 1);
+        finish();
+        soundButton.disabled = true;
+    } else if (capture) render(0);
+    if (window.parent !== window) window.parent.postMessage({type: "bites2b:intro:ready"}, location.origin);
+})();
+</script>
+</body>
+</html>
