@@ -1,1 +1,155 @@
-{"browser":"Microsoft Edge via Playwright/CDP","base":"http://127.0.0.1:18085/marketing?lang=en","desktop":{"viewport":1440,"status":200,"wordmark":"loaded","consoleErrors":0,"requestFailures":0},"mobile":{"viewport":390,"status":200,"wordmark":"loaded","consoleErrors":0,"requestFailures":0}}
+{
+  "pages": [
+    {
+      "label": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "httpStatus": 200,
+      "logo": {
+        "loaded": true,
+        "src": "http://127.0.0.1:18087/images/bites2b-wordmark-corrected-d2.svg"
+      },
+      "compact": {
+        "loaded": true,
+        "src": "http://127.0.0.1:18087/images/bites2b-compact-symbol.svg"
+      },
+      "favicons": [
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol.svg",
+          "status": 200,
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-512.png",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-64.png",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-32.png",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-16.png",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-180.png",
+          "status": 200,
+          "type": "image/png"
+        }
+      ],
+      "png": {
+        "16": {
+          "status": 200,
+          "type": "image/png"
+        },
+        "32": {
+          "status": 200,
+          "type": "image/png"
+        },
+        "64": {
+          "status": 200,
+          "type": "image/png"
+        },
+        "180": {
+          "status": 200,
+          "type": "image/png"
+        },
+        "512": {
+          "status": 200,
+          "type": "image/png"
+        }
+      },
+      "overflow": {
+        "scrollWidth": 1425,
+        "innerWidth": 1440
+      },
+      "errors": []
+    },
+    {
+      "label": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "httpStatus": 200,
+      "logo": {
+        "loaded": true,
+        "src": "http://127.0.0.1:18087/images/bites2b-wordmark-corrected-d2.svg"
+      },
+      "compact": {
+        "loaded": true,
+        "src": "http://127.0.0.1:18087/images/bites2b-compact-symbol.svg"
+      },
+      "favicons": [
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol.svg",
+          "status": 200,
+          "type": "image/svg+xml"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-512.png",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-64.png",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-32.png",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-16.png",
+          "status": 200,
+          "type": "image/png"
+        },
+        {
+          "href": "http://127.0.0.1:18087/images/bites2b-compact-symbol-180.png",
+          "status": 200,
+          "type": "image/png"
+        }
+      ],
+      "png": {
+        "16": {
+          "status": 200,
+          "type": "image/png"
+        },
+        "32": {
+          "status": 200,
+          "type": "image/png"
+        },
+        "64": {
+          "status": 200,
+          "type": "image/png"
+        },
+        "180": {
+          "status": 200,
+          "type": "image/png"
+        },
+        "512": {
+          "status": 200,
+          "type": "image/png"
+        }
+      },
+      "overflow": {
+        "scrollWidth": 375,
+        "innerWidth": 390
+      },
+      "errors": []
+    }
+  ],
+  "errors": []
+}
