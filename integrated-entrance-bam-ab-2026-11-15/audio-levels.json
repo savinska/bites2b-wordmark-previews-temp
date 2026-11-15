@@ -1,0 +1,262 @@
+{
+  "measurement": "Browser-recorded H.264/AAC MP4 decoded to signed 16-bit PCM, 48 kHz stereo. RMS and sample peak are combined-mix, file-relative measurements.",
+  "captures": {
+    "previous_desktop": {
+      "file": "desktop-intro-bg-with-audio.mp4",
+      "bytes": 359226,
+      "windows": {
+        "falling_plates": {
+          "window_s": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -22.28,
+          "sample_peak_dbfs": -6.6
+        },
+        "BAM": {
+          "window_s": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -15.99,
+          "sample_peak_dbfs": -2.44
+        },
+        "CRUNCH": {
+          "window_s": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.39,
+          "sample_peak_dbfs": -3.42
+        }
+      }
+    },
+    "A_desktop": {
+      "file": "desktop-bam-a-with-audio.mp4",
+      "bytes": 367770,
+      "windows": {
+        "falling_plates": {
+          "window_s": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -22.28,
+          "sample_peak_dbfs": -6.6
+        },
+        "BAM": {
+          "window_s": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -16.04,
+          "sample_peak_dbfs": -2.5
+        },
+        "CRUNCH": {
+          "window_s": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.39,
+          "sample_peak_dbfs": -3.42
+        }
+      }
+    },
+    "B_desktop": {
+      "file": "desktop-bam-b-with-audio.mp4",
+      "bytes": 372824,
+      "windows": {
+        "falling_plates": {
+          "window_s": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -22.24,
+          "sample_peak_dbfs": -7.31
+        },
+        "BAM": {
+          "window_s": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -13.45,
+          "sample_peak_dbfs": -1.45
+        },
+        "CRUNCH": {
+          "window_s": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.4,
+          "sample_peak_dbfs": -3.51
+        }
+      }
+    },
+    "previous_mobile": {
+      "file": "mobile-390-intro-bg-with-audio.mp4",
+      "bytes": 228754,
+      "windows": {
+        "falling_plates": {
+          "window_s": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -22.23,
+          "sample_peak_dbfs": -7.31
+        },
+        "BAM": {
+          "window_s": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -15.99,
+          "sample_peak_dbfs": -2.45
+        },
+        "CRUNCH": {
+          "window_s": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.3,
+          "sample_peak_dbfs": -3.08
+        }
+      }
+    },
+    "A_mobile": {
+      "file": "mobile-390-bam-a-with-audio.mp4",
+      "bytes": 204324,
+      "windows": {
+        "falling_plates": {
+          "window_s": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -22.24,
+          "sample_peak_dbfs": -7.31
+        },
+        "BAM": {
+          "window_s": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -16.1,
+          "sample_peak_dbfs": -2.49
+        },
+        "CRUNCH": {
+          "window_s": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.31,
+          "sample_peak_dbfs": -3.08
+        }
+      }
+    },
+    "B_mobile": {
+      "file": "mobile-390-bam-b-with-audio.mp4",
+      "bytes": 218087,
+      "windows": {
+        "falling_plates": {
+          "window_s": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -22.28,
+          "sample_peak_dbfs": -6.41
+        },
+        "BAM": {
+          "window_s": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -13.61,
+          "sample_peak_dbfs": -1.75
+        },
+        "CRUNCH": {
+          "window_s": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.36,
+          "sample_peak_dbfs": -3.49
+        }
+      }
+    }
+  },
+  "changes_vs_previous": {
+    "desktop": {
+      "falling_plates": {
+        "A_rms_db": 0.0,
+        "A_peak_db": 0.0,
+        "B_rms_db": 0.04,
+        "B_peak_db": -0.71
+      },
+      "BAM": {
+        "A_rms_db": -0.05,
+        "A_peak_db": -0.06,
+        "B_rms_db": 2.54,
+        "B_peak_db": 0.99
+      },
+      "CRUNCH": {
+        "A_rms_db": 0.0,
+        "A_peak_db": 0.0,
+        "B_rms_db": -0.01,
+        "B_peak_db": -0.09
+      }
+    },
+    "mobile": {
+      "falling_plates": {
+        "A_rms_db": -0.01,
+        "A_peak_db": 0.0,
+        "B_rms_db": -0.05,
+        "B_peak_db": 0.9
+      },
+      "BAM": {
+        "A_rms_db": -0.11,
+        "A_peak_db": -0.04,
+        "B_rms_db": 2.38,
+        "B_peak_db": 0.7
+      },
+      "CRUNCH": {
+        "A_rms_db": -0.01,
+        "A_peak_db": 0.0,
+        "B_rms_db": -0.06,
+        "B_peak_db": -0.41
+      }
+    }
+  },
+  "source_hashes": {
+    "collision-thud.mp3": "d8ecc7247c07896a8911495568a8c5c5aed1d8cf1cf2a754237d4bb4f63d8b9d",
+    "plate-break-1.mp3": "ecbf68e49faac27f27d93d5654c496db1539e87ea57dc1d7aa0790ffc3883910",
+    "plate-break-2.mp3": "964b4c4cb6776439b1396b58d809bfee6804f85c1ce37cb686fa391fa2f50871",
+    "plate-break-3.mp3": "61df7f9d7833304fab92a1edba236dddd3b604ad3b1caf1723c09db949c5bc17",
+    "plate-break-4.mp3": "1f41940bacd431977d8fd58ca06d44feb4be83218e4e5561cb2177e219c0cec5",
+    "plate-break-5.mp3": "7ff9cb77aa7d2fde6e4643d9470f4ce15bc7477a34743819b01f0df7e15ceead",
+    "cracker-bite.mp3": "591979a659cdd3bf9bd67e884dd9a0446983e1045f89e0fdad08b2205c6afd3a"
+  },
+  "configured_gains_and_timing": {
+    "master": 0.82,
+    "plate_break_levels": [
+      0.54,
+      0.6,
+      0.64,
+      0.7,
+      0.76
+    ],
+    "BAM_event_gain_both": 1.17,
+    "BAM_time_s": 2.13,
+    "CRUNCH_gain": 0.96,
+    "CRUNCH_time_s": 3.382
+  },
+  "plate_tail_analysis": {
+    "last_cue_onset_s": 1.17,
+    "last_source_clip_duration_s": 0.56,
+    "approx_last_cue_end_s": 1.73,
+    "BAM_onset_s": 2.13,
+    "gap_s": 0.4,
+    "ducking_applied": false
+  },
+  "treatments": {
+    "A": "Same approved thud take; HPF 38 Hz, low shelf +2.5 dB/140 Hz, +1 dB/900 Hz, high shelf -1.5 dB/5.5 kHz, +1 dB onset emphasis through 0.10 s, then gentle tail reduction to -3.2 dB by end; limiter ceiling 0.82.",
+    "B": "Same approved thud take; pitch -0.89 semitones, HPF 35 Hz, low shelf +4 dB/105 Hz, +2.5 dB/560 Hz, high shelf -3 dB/4.3 kHz, +4.35 dB onset emphasis through 0.10 s, then tail reduction to -7.9 dB by end; limiter ceiling 0.89."
+  }
+}

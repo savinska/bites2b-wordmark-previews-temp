@@ -1,0 +1,160 @@
+{
+  "browser": "Google Chrome headless",
+  "device": "desktop/mobile viewport emulation; not physical devices",
+  "host": "http://bites2b.local:18085",
+  "layouts": [
+    {
+      "width": 320,
+      "pageScroll": 320,
+      "stageVisible": true,
+      "mainInert": true,
+      "frameWidth": 320,
+      "frameViewport": 320,
+      "slogan": "Сложи ред в бизнеса си.",
+      "play": "Пусни интрото",
+      "continueHidden": true,
+      "lang": "bg",
+      "soundPressed": "false"
+    },
+    {
+      "width": 320,
+      "pageScroll": 320,
+      "stageVisible": true,
+      "mainInert": true,
+      "frameWidth": 320,
+      "frameViewport": 320,
+      "slogan": "Bring order to your business.",
+      "play": "Play intro",
+      "continueHidden": true,
+      "lang": "en",
+      "soundPressed": "false"
+    },
+    {
+      "width": 390,
+      "pageScroll": 390,
+      "stageVisible": true,
+      "mainInert": true,
+      "frameWidth": 390,
+      "frameViewport": 390,
+      "slogan": "Сложи ред в бизнеса си.",
+      "play": "Пусни интрото",
+      "continueHidden": true,
+      "lang": "bg",
+      "soundPressed": "false"
+    },
+    {
+      "width": 390,
+      "pageScroll": 390,
+      "stageVisible": true,
+      "mainInert": true,
+      "frameWidth": 390,
+      "frameViewport": 390,
+      "slogan": "Bring order to your business.",
+      "play": "Play intro",
+      "continueHidden": true,
+      "lang": "en",
+      "soundPressed": "false"
+    },
+    {
+      "width": 1440,
+      "pageScroll": 1440,
+      "stageVisible": true,
+      "mainInert": true,
+      "frameWidth": 1440,
+      "frameViewport": 1440,
+      "slogan": "Сложи ред в бизнеса си.",
+      "play": "Пусни интрото",
+      "continueHidden": true,
+      "lang": "bg",
+      "soundPressed": "false"
+    },
+    {
+      "width": 1440,
+      "pageScroll": 1440,
+      "stageVisible": true,
+      "mainInert": true,
+      "frameWidth": 1440,
+      "frameViewport": 1440,
+      "slogan": "Bring order to your business.",
+      "play": "Play intro",
+      "continueHidden": true,
+      "lang": "en",
+      "soundPressed": "false"
+    }
+  ],
+  "videos": [
+    {
+      "video": "desktop-bam-a-with-audio.mp4",
+      "bytes": 367770,
+      "audio_bytes": 47588,
+      "viewport": "1440x900",
+      "fps": 20,
+      "animation_end_seconds": 4.322,
+      "continue_frame": 100,
+      "audio_context": "running",
+      "audio_mime": "audio/webm;codecs=opus",
+      "audio_video_offset_seconds": 0.0
+    },
+    {
+      "video": "desktop-bam-b-with-audio.mp4",
+      "bytes": 372824,
+      "audio_bytes": 50862,
+      "viewport": "1440x900",
+      "fps": 20,
+      "animation_end_seconds": 4.322,
+      "continue_frame": 100,
+      "audio_context": "running",
+      "audio_mime": "audio/webm;codecs=opus",
+      "audio_video_offset_seconds": 0.0
+    },
+    {
+      "video": "mobile-390-bam-a-with-audio.mp4",
+      "bytes": 204324,
+      "audio_bytes": 47627,
+      "viewport": "390x844",
+      "fps": 20,
+      "animation_end_seconds": 4.322,
+      "continue_frame": 100,
+      "audio_context": "running",
+      "audio_mime": "audio/webm;codecs=opus",
+      "audio_video_offset_seconds": 0.0
+    },
+    {
+      "video": "mobile-390-bam-b-with-audio.mp4",
+      "bytes": 218087,
+      "audio_bytes": 51115,
+      "viewport": "390x844",
+      "fps": 20,
+      "animation_end_seconds": 4.322,
+      "continue_frame": 100,
+      "audio_context": "running",
+      "audio_mime": "audio/webm;codecs=opus",
+      "audio_video_offset_seconds": 0.0
+    }
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "layoutShift": 0,
+  "simulatorCtasAfterEntry": 2,
+  "guidedTourAfterEntry": true,
+  "reducedMotion": {
+    "text": "See how →",
+    "visible": true,
+    "playHidden": true,
+    "opacity": "1",
+    "lang": "en",
+    "reduced": true
+  },
+  "mutedPlayback": {
+    "pressed": "false",
+    "audioRequests": 0
+  },
+  "audioFailureFallback": {
+    "pressed": "false",
+    "busy": null
+  },
+  "tenantRouteIsolation": {
+    "intro": false,
+    "script": false
+  }
+}

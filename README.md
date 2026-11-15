@@ -27,3 +27,10 @@ Preview assets are published here for review. The final code change is in the [d
 - [Desktop MP4 with audio](integrated-entrance-ceramic-breaks-2026-11-15/desktop-intro-bg-with-audio.mp4)
 - [Mobile 390 px MP4 with audio](integrated-entrance-ceramic-breaks-2026-11-15/mobile-390-intro-bg-with-audio.mp4)
 - [First 1.8 seconds](integrated-entrance-ceramic-breaks-2026-11-15/desktop-falling-letters-first-1-8s-with-audio.mp4)
+
+
+## BAM A/B review (2026-11-15)
+
+- [A/B review and measurements](integrated-entrance-bam-ab-2026-11-15/README.md)
+- [Version A desktop](integrated-entrance-bam-ab-2026-11-15/desktop-bam-a-with-audio.mp4) · [Version B desktop](integrated-entrance-bam-ab-2026-11-15/desktop-bam-b-with-audio.mp4)
+- [Version A mobile](integrated-entrance-bam-ab-2026-11-15/mobile-390-bam-a-with-audio.mp4) · [Version B mobile](integrated-entrance-bam-ab-2026-11-15/mobile-390-bam-b-with-audio.mp4)
