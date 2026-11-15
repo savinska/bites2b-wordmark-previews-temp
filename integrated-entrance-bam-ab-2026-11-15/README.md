@@ -1,5 +1,7 @@
 # BAM A/B review
 
+**Selected for the final intro: Version B.** The production implementation now loads B directly; this page preserves the requested A/B review record.
+
 These desktop and mobile MP4s are full browser captures with the actual Web Audio output. Visuals, animation choreography, BAM event time and per-event gain, ceramic plate clips and gains, CRUNCH file, time and gain are the same in both versions.
 
 ## Play

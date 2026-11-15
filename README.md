@@ -29,6 +29,8 @@ Preview assets are published here for review. The final code change is in the [d
 - [First 1.8 seconds](integrated-entrance-ceramic-breaks-2026-11-15/desktop-falling-letters-first-1-8s-with-audio.mp4)
 
 
+**Version B selected as the final BAM treatment for PR #36.** The comparison captures remain available below.
+
 ## BAM A/B review (2026-11-15)
 
 - [A/B review and measurements](integrated-entrance-bam-ab-2026-11-15/README.md)
