@@ -1,0 +1,168 @@
+{
+  "method": "MP4 AAC decoded by FFmpeg to signed 16-bit 48 kHz stereo; RMS and sample peak measured over each file-relative window.",
+  "windows": {
+    "desktop_1440x900": {
+      "previous_preview": {
+        "falling_letters": {
+          "seconds": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -21.54,
+          "sample_peak_dbfs": -4.57
+        },
+        "collision": {
+          "seconds": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -18.43,
+          "sample_peak_dbfs": -4.76
+        },
+        "bite": {
+          "seconds": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.38,
+          "sample_peak_dbfs": -3.52
+        }
+      },
+      "new_plate_mix": {
+        "falling_letters": {
+          "seconds": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -22.28,
+          "sample_peak_dbfs": -6.6
+        },
+        "collision": {
+          "seconds": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -15.99,
+          "sample_peak_dbfs": -2.44
+        },
+        "bite": {
+          "seconds": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.39,
+          "sample_peak_dbfs": -3.42
+        }
+      },
+      "change_db": {
+        "falling_letters": {
+          "rms": -0.74,
+          "sample_peak": -2.03
+        },
+        "collision": {
+          "rms": 2.44,
+          "sample_peak": 2.32
+        },
+        "bite": {
+          "rms": -0.01,
+          "sample_peak": 0.1
+        }
+      }
+    },
+    "mobile_390x844": {
+      "previous_preview": {
+        "falling_letters": {
+          "seconds": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -21.8,
+          "sample_peak_dbfs": -4.15
+        },
+        "collision": {
+          "seconds": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -18.38,
+          "sample_peak_dbfs": -4.53
+        },
+        "bite": {
+          "seconds": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.45,
+          "sample_peak_dbfs": -3.44
+        }
+      },
+      "new_plate_mix": {
+        "falling_letters": {
+          "seconds": [
+            0.5,
+            1.5
+          ],
+          "rms_dbfs": -22.23,
+          "sample_peak_dbfs": -7.31
+        },
+        "collision": {
+          "seconds": [
+            2.1,
+            2.6
+          ],
+          "rms_dbfs": -15.99,
+          "sample_peak_dbfs": -2.45
+        },
+        "bite": {
+          "seconds": [
+            3.3,
+            4.0
+          ],
+          "rms_dbfs": -26.3,
+          "sample_peak_dbfs": -3.08
+        }
+      },
+      "change_db": {
+        "falling_letters": {
+          "rms": -0.43,
+          "sample_peak": -3.16
+        },
+        "collision": {
+          "rms": 2.39,
+          "sample_peak": 2.08
+        },
+        "bite": {
+          "rms": 0.15,
+          "sample_peak": 0.36
+        }
+      }
+    }
+  },
+  "cue_timing_seconds_from_animation_start": {
+    "letter_landings": [
+      0.58,
+      0.75,
+      0.9,
+      1.04,
+      1.17
+    ],
+    "collision_BAM": 2.13,
+    "bite_CRUNCH": 3.382
+  },
+  "collision_gain": {
+    "previous": 0.88,
+    "new": 1.17,
+    "increase_db": 2.47
+  },
+  "master_gain": 0.82,
+  "notes": [
+    "Previous values are measured from the immediately preceding published browser recording.",
+    "The letter-break mix has distinct ceramic events and no ambience/voice assets.",
+    "BAM and CRUNCH source assets are byte-identical to the previous preview; CRUNCH event time and configured gain are unchanged.",
+    "Mobile is a 390x844 viewport emulation; no physical iPhone speaker was available."
+  ],
+  "asset_hashes": {
+    "collision-thud.mp3": "d8ecc7247c07896a8911495568a8c5c5aed1d8cf1cf2a754237d4bb4f63d8b9d",
+    "cracker-bite.mp3": "591979a659cdd3bf9bd67e884dd9a0446983e1045f89e0fdad08b2205c6afd3a"
+  }
+}

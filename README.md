@@ -19,3 +19,11 @@ Variant B links:
 ![Final D2 mobile preview](variant-d2/mobile-390.gif)
 
 Preview assets are published here for review. The final code change is in the [draft PR](https://github.com/savinska/catering-saas/pull/35).
+
+
+## Latest ceramic plate-break review (2026-11-15)
+
+- [Review bundle and audio sources](integrated-entrance-ceramic-breaks-2026-11-15/README.md)
+- [Desktop MP4 with audio](integrated-entrance-ceramic-breaks-2026-11-15/desktop-intro-bg-with-audio.mp4)
+- [Mobile 390 px MP4 with audio](integrated-entrance-ceramic-breaks-2026-11-15/mobile-390-intro-bg-with-audio.mp4)
+- [First 1.8 seconds](integrated-entrance-ceramic-breaks-2026-11-15/desktop-falling-letters-first-1-8s-with-audio.mp4)
