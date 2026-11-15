@@ -1,0 +1,81 @@
+{
+  "measurement_method": "Decode exported MP4 AAC audio to signed 16-bit PCM at 48 kHz stereo; compute RMS across both channels and sample peak for the requested file-relative windows.",
+  "browser_capture": {
+    "browser": "Google Chrome headless",
+    "viewport_emulation": ["1440x900 desktop", "390x844 mobile"],
+    "audio_track": "AAC-LC, 48 kHz stereo",
+    "audio_video_schedule_offset_seconds": 0,
+    "physical_iphone_speaker_test": false
+  },
+  "cue_timing_seconds_from_animation_start": {
+    "coral_letter_landings": {
+      "B": 0.58,
+      "i": 0.75,
+      "t": 0.90,
+      "e": 1.04,
+      "s": 1.17
+    },
+    "collision_bam": 2.13,
+    "bite_crunch": 3.382,
+    "cafeteria_fade_complete": 3.302,
+    "shared_audio_visual_lead_in": 0.12
+  },
+  "windows": [
+    {
+      "name": "falling letters",
+      "file_relative_seconds": [0.5, 1.5],
+      "previous": {"rms_dbfs": -42.2, "sample_peak_dbfs": -26.4},
+      "corrected": {"rms_dbfs": -21.5, "sample_peak_dbfs": -4.6},
+      "rms_increase_db": 20.7
+    },
+    {
+      "name": "collision",
+      "file_relative_seconds": [2.1, 2.6],
+      "previous": {"rms_dbfs": -18.4, "sample_peak_dbfs": -4.8},
+      "corrected": {"rms_dbfs": -18.4, "sample_peak_dbfs": -4.8},
+      "rms_change_db": 0.0
+    },
+    {
+      "name": "bite",
+      "file_relative_seconds": [3.3, 4.0],
+      "previous": {"rms_dbfs": -26.4, "sample_peak_dbfs": -3.5},
+      "corrected": {"rms_dbfs": -26.4, "sample_peak_dbfs": -3.5},
+      "rms_change_db": 0.0
+    }
+  ],
+  "mobile_390x844_windows": [
+    {
+      "name": "falling letters",
+      "file_relative_seconds": [0.5, 1.5],
+      "previous": {"rms_dbfs": -42.5, "sample_peak_dbfs": -26.6},
+      "corrected": {"rms_dbfs": -21.8, "sample_peak_dbfs": -4.1},
+      "rms_increase_db": 20.7
+    },
+    {
+      "name": "collision",
+      "file_relative_seconds": [2.1, 2.6],
+      "previous": {"rms_dbfs": -18.4, "sample_peak_dbfs": -4.5},
+      "corrected": {"rms_dbfs": -18.4, "sample_peak_dbfs": -4.5},
+      "rms_change_db": 0.0
+    },
+    {
+      "name": "bite",
+      "file_relative_seconds": [3.3, 4.0],
+      "previous": {"rms_dbfs": -26.5, "sample_peak_dbfs": -3.4},
+      "corrected": {"rms_dbfs": -26.5, "sample_peak_dbfs": -3.4},
+      "rms_change_db": 0.0
+    }
+  ],
+  "unchanged_collision_and_bite": {
+    "collision_thud_sha256": "d8ecc7247c07896a8911495568a8c5c5aed1d8cf1cf2a754237d4bb4f63d8b9d",
+    "cracker_bite_sha256": "374ef5bd52a1314dd625e689cd12f88ea525d972ca7341b6f520bb5c3f810e4c",
+    "collision_gain": 0.88,
+    "bite_gain": 0.96,
+    "master_gain": 0.82
+  },
+  "notes": [
+    "BAM and CRUNCH assets were byte-compared to the prior approved PR head and are unchanged; their event times and per-event gains were not changed.",
+    "The ambient fader returns to 0.085 before collision and fades to silence before the bite. The global master was not normalized or compressed.",
+    "The corrected falling-window sample peak is below 0 dBFS; the mobile recording is a viewport emulation, not a real iPhone speaker test."
+  ]
+}
